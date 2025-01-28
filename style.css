@@ -978,5 +978,204 @@ footer {
 footer .newsletter,  footer .footernav {
     margin-bottom: 20px;
 }
+/* Media Query for small screens (phones, 768px and below) */
+@media (max-width: 768px) {
+    /* General adjustments */
+    body {
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+
+    /* Header adjustments */
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        height: 50px; /* Make the logo smaller on small screens */
+        margin-left: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    /* Hero section */
+    .hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-mid {
+        background-size: cover;
+        padding: 80px 20px;
+    }
+
+    .man {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .man img {
+        height: 40px; /* Smaller image on smaller screens */
+    }
+
+    .heroleft ul {
+        padding-left: 0;
+    }
+
+    .heroleft ul li a {
+        font-size: 14px; /* Smaller text */
+    }
+
+    .regionlist {
+        grid-template-columns: repeat(1, 1fr); /* Single column for country list */
+    }
+
+    .country {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* Topbar adjustments */
+    .topbar {
+        flex-direction: column;
+    }
+
+    .topbar .language-currency {
+        margin-top: 10px;
+    }
+
+    /* Footer adjustments */
+    footer {
+        padding: 15px;
+    }
+
+    .footernav {
+        flex-direction: column;
+    }
+
+    .coulmn {
+        min-width: auto;
+        margin: 10px 0;
+    }
+
+    .coulmn ul {
+        padding-left: 0;
+    }
+
+    .newsletter-form input[type="email"] {
+        width: 250px; /* Smaller input field */
+    }
+
+    /* News section adjustments */
+    .deals-items {
+        flex-direction: column; /* Stack deal items vertically */
+    }
+
+    .deals .dealitem {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* Extra services */
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sercic {
+        width: 90%; /* Make the service cards take more width */
+    }
+
+    /* Grid for the cards */
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr); /* Single column for cards */
+        grid-template-rows: repeat(5, auto); /* Ensure proper row arrangement */
+    }
+}
+
+/* Media Query for medium screens (tablets, 1024px to 768px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    /* Adjustments for tablets */
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-mid {
+        background-size: cover;
+        padding: 120px 20px;
+    }
+
+    .regionlist {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+
+    .topbar {
+        flex-direction: column;
+    }
+
+    .footernav {
+        flex-direction: column;
+    }
+
+    .services-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sercic {
+        width: 45%; /* Slightly smaller cards for tablets */
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for cards */
+    }
+}
+
+/* Media Query for large screens (desktops, 1200px and above) */
+@media (min-width: 1200px) {
+    /* Large screens */
+    .cards-container {
+        grid-template-columns: repeat(5, 1fr); /* Five columns */
+    }
+
+    .services-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sercic {
+        width: 18%; /* Even smaller cards on larger screens */
+    }
+
+    /* Footer column adjustments */
+    .footernav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .coulmn {
+        min-width: 200px;
+    }
+}
 
 
