@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+  <div class="dashboard-container">
+    <h1>Welcome, <span id="userName">User</span>!</h1>
+    <div class="dashboard-nav">
+      <button id="orderHistoryBtn">Order History</button>
+      <button id="accountSettingsBtn">Account Settings</button>
+      <button id="logoutBtn">Logout</button>
+    </div>
+
+    <div id="orderHistory" class="dashboard-section">
+      <h2>Order History</h2>
+      <ul id="ordersList"></ul>
+    </div>
+
+    <div id="accountSettings" class="dashboard-section">
+      <h2>Account Settings</h2>
+      <form id="accountForm">
+        <input type="email" id="newEmail" placeholder="New Email">
+        <input type="password" id="newPassword" placeholder="New Password">
+        <button type="submit">Update</button>
+      </form>
+    </div>
+  </div>
+  
+  <script src="dashboard.js"></script>
+</body>
+</html>

@@ -187,7 +187,7 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
 }
-.text button{
+.text button a{
     background-color: #fffafa;
     color: #569de9;
     border: 2px solid white;
@@ -197,7 +197,7 @@ body {
     cursor: pointer;
 
 }
-.text button:hover{
+.text button a:hover{
     background-color: #71aef0;
     color: #f8f8f8;
     border: #4e9ef3;
@@ -959,6 +959,35 @@ footer p{
 .coulmn ul li:hover {
     color: #007BFF;
 }
+:root {
+  --bg-color-light: #ffffff;
+  --text-color-light: #000000;
+  --bg-color-dark: #333333;
+  --text-color-dark: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+}
+
+body.dark-mode {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
 
 /* Ensure footer is always at the bottom */
 html, body {
@@ -1176,6 +1205,36 @@ footer .newsletter,  footer .footernav {
     .coulmn {
         min-width: 200px;
     }
+}
+/* Styling for the Add to Cart button */
+button {
+    background-color: #3498db;  /* Blue background color */
+    color: white;  /* Text color */
+    padding: 10px 20px;  /* Padding for spacing */
+    border: none;  /* Removing default border */
+    border-radius: 5px;  /* Rounded corners */
+    font-size: 16px;  /* Font size */
+    cursor: pointer;  /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s;  /* Smooth transition for hover effects */
+    text-align: center;
+}
+
+button:hover {
+    background-color: #2980b9;  /* Darker blue background when hovered */
+    transform: translateY(-2px);  /* Slightly lift the button on hover */
+}
+
+/* Add a hover effect to the link inside the button */
+button a {
+    color: white;  /* Ensures the text inside the button stays white */
+    text-decoration: none;  /* Removes underline */
+    display: block;  /* Makes the link take up the full space of the button */
+}
+
+/* Optional: Add a focus effect for accessibility */
+button:focus {
+    outline: none;  /* Removes the default focus outline */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.8);  /* Adds a blue glow when focused */
 }
 
 

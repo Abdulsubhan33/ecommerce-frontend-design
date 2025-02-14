@@ -1,0 +1,179 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.checkout-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.progress {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.step {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.step.active {
+    background-color: #3498db;
+}
+
+.step:hover {
+    cursor: pointer;
+    background-color: #2980b9;
+}
+
+.step-form {
+    display: none;
+}
+
+.step-form.active {
+    display: block;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #3498db;
+}
+
+form button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+button[type="button"] {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Order Review Section */
+#order-summary {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+}
+
+#order-summary ul {
+    list-style: none;
+}
+
+#order-summary li {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Custom styles for "Place Order" button */
+button.place-order {
+    width: 100%;
+    padding: 15px;
+    background-color: #2ecc71;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.place-order:hover {
+    background-color: #27ae60;
+}
+/* Style for Place Order button */
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    font-size: 16px; /* Font size */
+    padding: 15px 32px; /* Padding for top/bottom and left/right */
+    border: none; /* Remove the default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    margin-top: 20px; /* Add margin to the top */
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #45a049; /* Darker green when hovered */
+    transform: scale(1.05); /* Slightly grow the button */
+}
+
+/* Focus effect (when the button is focused, e.g., after clicking) */
+button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px 2px rgba(72, 169, 72, 0.6); /* Green shadow around button */
+}
+
+/* Disable the button */
+button:disabled {
+    background-color: #cccccc; /* Grey background when disabled */
+    cursor: not-allowed; /* Change cursor to not-allowed */
+    opacity: 0.7; /* Slightly transparent */
+}
